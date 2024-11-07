@@ -1,0 +1,147 @@
+write a program to calculate the greatest common divisor(gcd) and lcm of corresponging elements from 2 arrays array x and array y .The size of the arrays will be provided as an input
+Read the array size
+Enter the elements of the arrays
+calculate GCD and LCM for the elements
+
+
+
+
+x----------------------------------------------------------------------------------------------------------------------------------------------------------x
+
+
+
+
+Problem Statement 1: Temperature Monitoring System Objective: Design a temperature monitoring system that reads temperature data from a sensor and triggers an alarm if the temperature exceeds a predefined threshold. Requirements: Read temperature data from a temperature sensor at regular intervals. Compare the read temperature with a predefined threshold. If the temperature exceeds the threshold, activate an alarm (e.g., LED or buzzer). Include functionality to reset the alarm.   Problem Statement 2: Motor Control System Objective: Implement a motor control system that adjusts the speed of a DC motor based on user input. Requirements: Use a potentiometer to read user input for desired motor speed. Control the motor speed using PWM (Pulse Width Modulation). Display the current speed on an LCD.   Problem Statement 3: LED Blinking Pattern Objective: Create an embedded system that controls an array of LEDs to blink in a specific pattern based on user-defined settings. Requirements: Allow users to define blink patterns (e.g., fast, slow). Implement different patterns using timers and interrupts. Provide feedback through an LCD or serial monitor.   Problem Statement 5: Data Logger Objective: Develop a data logger that collects sensor data over time and stores it in non-volatile memory. Requirements: Read data from sensors (e.g., temperature, humidity) at specified intervals. Store collected data in EEPROM or flash memory. Implement functionality to retrieve and display logged data
+
+Algorithm for problem 1:
+1.Start
+2.Initialize the components
+3.Set threshold for temperature
+4.Using loop read the temperature
+5.Compare the temperature with threshold
+5.1.If temperature greater than threshold activate alarm 
+5.2.If temperature is below or equal to threshold monitoring continues
+6.Reset
+7.End loop
+
+
+Algorithm for problem 2:
+1.Start
+2.Initialize the components
+3.Set PWM(pulse width modulation) to control the speed of the motor
+looping
+4.1.Read the potentiometer value to determine motor speed.
+4.2.Convert potentiometer reading to PWM signal
+4.3.Set motor speed
+4.4.Display on LCD
+6.End loop
+
+Algorithm for problem 3:
+1.Start
+2.Initialize the LED,LCD,timer
+3.Define the blink patterns as fast or slow
+4.Get input for desired blink patterns
+5.looping based on selected patterns
+5.1.set the timer to control blink rate and toggle LED on and off 
+5.2.Display on LCD
+6.End loop
+
+
+Algorithm for problem 4:
+Start
+2.Initialize the sensor, EEPROM or flash memory and timer
+3.Set datalogging intervals
+4.loop to collect and store data
+5.Retrieve and display the stored data
+6.End loop
+
+
+x----------------------------------------------------------------------------------------------------------------------------------------------------------x
+
+
+
+Enter the num1
+Enter the num2
+Enter operations = (+,-,*,/)
+
+if operation= '+' 
+	return num1+num2
+else if operation = '-'
+	return num1-num2
+else if operation='*'
+	return num1*num2
+else if operation='/'
+	return num1*num2
+end if
+
+x----------------------------------------------------------------------------------------------------------------------------------------------------------x
+
+
+
+Factorial calculation
+
+fact=1
+for i=(1 to n),do
+	fact=fact*i
+end for
+return fact 
+
+
+
+x----------------------------------------------------------------------------------------------------------------------------------------------------------x
+
+using recursion
+
+function factorial(n):
+	if n==0 or n==1 
+		return 1
+	else
+		return n*factorial(n-1)
+	end if
+end function
+
+
+
+
+
+
+
+
+
+x----------------------------------------------------------------------------------------------------------------------------------------------------------x
+
+
+
+smart irrigation system
+
+
+
+Start the system
+SET threshold
+INITIALIZE sensor,waterpump
+SET startTime = 6 AM
+SET stopTime = 6 PM
+while 1, do
+	moistureLevel = READ sensor
+	currentTime = GET current time
+	print "current moisture level:",moistureLevel,"%"
+
+	if moistureLevel < threshold and currentTime <= stopTime Then
+		if moistureLevel < threshold then
+			activate waterpump
+			Display "Watering plants"
+		else
+			deactivate waterpump
+			Display "Moisture level adequate. Watering not needed"
+
+		endif
+	end if
+end while 
+end
+
+
+
+
+
+
+
