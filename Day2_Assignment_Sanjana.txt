@@ -129,17 +129,48 @@ while 1, do
 	print "current moisture level:",moistureLevel,"%"
 
 	if moistureLevel < threshold and currentTime <= stopTime Then
-		if moistureLevel < threshold then
 			activate waterpump
 			Display "Watering plants"
 		else
 			deactivate waterpump
 			Display "Moisture level adequate. Watering not needed"
 
-		endif
 	end if
 end while 
 end
+
+
+
+flowchart
+
+
+start(oval)
+set the threshold(rectangle)
+Initialize sensor,waterpump(rectangle)
+set starttime=6 AM AND stoptime=6 PM(rectangle)
+while 1(diamond)
+read moisture level,get currentTime,Display current moisture level(reactangle)
+if moistureLevel<Threshold(diamond)
+	|		|
+	V		V
+       yes             No -------->Deactivate water pump(reactangle)
+	|
+	V
+If currentTime<=stopTime(diamond)
+	|	|
+	V	V
+       Yes     No--------->Deactivate water pump(rectangle)---->Display water level adequate.No need of watering(rectangle)
+	|
+	V
+Activate water pump
+	|
+	V
+Display watering plants(rectangle)
+	|
+	V
+    End while loop
+	stop
+
 
 
 
