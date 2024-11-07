@@ -1,7 +1,9 @@
 write a program to calculate the greatest common divisor(gcd) and lcm of corresponging elements from 2 arrays array x and array y .The size of the arrays will be provided as an input
-Read the array size
-Enter the elements of the arrays
-calculate GCD and LCM for the elements
+
+
+1.Read the array size
+2.Enter the elements of the arrays
+3.calculate GCD and LCM for the elements
 
 
 
